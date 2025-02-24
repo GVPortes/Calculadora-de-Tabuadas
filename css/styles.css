@@ -1,58 +1,109 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: Helvetica;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
-body{
+body {
     text-align: center;
     padding: 2rem;
     min-height: 100vh;
-    background: linear-gradient(180deg, #9900ff 0%, #fffb00  98%);
+    background: linear-gradient(180deg, #f700ff 0%, #0084ff 98%);
     color: #ffffff;
     font-weight: bold;
-
-
-h2{
-    color: white;
-    margin-bottom: 1rem;
-    font-size: 2rem;
 }
 
-#multiplication-form{
+h2 {
+    color: #ffffff;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    -webkit-text-stroke: 1px black;
+}
+
+h3 {
+    color: #ffffff;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    -webkit-text-stroke: 1px black;
+}
+
+#multiplication-form {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     margin: 1rem auto;
     max-width: 300px;
     padding: 1rem;
     background-color: #fff;
     border-radius: 1rem;
     color: #333;
-
 }
 
 .form-control {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0rem;
-
+    margin-bottom: 1rem;
 }
 
 .form-control label {
     margin-bottom: 0.5rem;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: bold;
-
 }
 
 .form-control input {
     padding: 0.5rem;
-    border: 1px solid #333;
+    border: 1px solid #000;
     border-radius: 0.5rem;
+    width: 80%;
+    text-align: center;
+}
+
+#multiplication-form input[type=submit] {
+    background-color: #ea00ff;
+    color: #00aeff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#multiplication-table {
+    margin-top: 2rem;
+}
+
+#multiplication-operations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+    max-width: 300px;
+    padding: 2rem 1rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    color: #333;
+}
+
+.operation-row {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
-    margin-bottom: 1rem;
-    border: 1px solid #000000;
+    max-width: 200px;
+    padding: 0.5rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.operation {
+    font-weight: bold;
+}
+
+.result {
+    font-weight: bold;
+    margin-left: 10px;
 }
